@@ -3,18 +3,18 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+# constants.py
+Lab1Height = 180
+Lab1Weight = 90
+Lab1Feet = 4000
+Lab1Time = 120
 
+# main.py
 
-H = 180;
-W = 90;
-F = 4000;
-T = 120;
-
-Step = (H / 4) + 0.37
-Length =  F * Step
-Speed = Length / 120
-Ccal = 0.035 * W + ((Speed ** 2) / H) * 0.0029 * W;
+Step = (Lab1Height / 4) + 0.37
+Length =  Lab1Feet * Step
+Speed = Length / Lab1Time
+Ccal = 0.035 * Lab1Weight + ((Speed ** 2) / Lab1Height) * 0.0029 * Lab1Weight;
 
 print (f'Расстояние: {Length} , Калории - {Ccal}')
-
-
+#Расстояние: 181480.0 , Калории - 3319.520561111111
