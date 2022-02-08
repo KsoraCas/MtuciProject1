@@ -1,5 +1,10 @@
-word = input()
-if str(word) == str(word)[::-1] :
+word = input("Введите слово: ")
+def is_palindrome(w):
+	for i in xrange(0, len(w)/2):
+		if w[i] != w[len(w)-i-1]:
+			return False
+	return True
+if is_palindrome(word) == True:
     print("Это палиндром")
 else:
     print ("Это не палиндром ")
