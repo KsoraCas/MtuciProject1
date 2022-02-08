@@ -11,20 +11,20 @@ TIME = 120
 
 # main.py
 
-Step = (HEIGHT / 4) + 0.37
-Length =  FEET * Step
-Speed = Length / TIME
-Ccal = 0.035 * WEIGHT + (Speed**2 / HEIGHT) * 0.0029 * WEIGHT;
+step = (HEIGHT / 4) + 0.37
+length =  FEET * step
+speed = length / TIME
+ccal = 0.035 * WEIGHT + (speed**2 / HEIGHT) * 0.0029 * WEIGHT;
 
-print (f'Расстояние: {Length} , Калории - {Ccal}')
+print (f'Расстояние: {length} , Калории - {ccal}')
 #Расстояние: 181480.0 , Калории - 3319.520561111111
 #Расстояние в км: 181.48
-KM = Length/1000
-print (f'Расстояние в км: {KM}')
+kilometers = length/1000
+print (f'Расстояние в км: {kilometers}')
 
-if KM > 6:
+if kilometers > 6:
  print ('Отличная работа!')
-elif KM > 4:
+elif kilometers > 4:
  print ('Почти выполнил норму!')
 else:
  print ('Давай еще ходи')
